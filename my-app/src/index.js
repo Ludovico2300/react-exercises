@@ -1,18 +1,8 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
+import React from "react";
+import ReactDOM from "react-dom"
+import { App } from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const appElement = <App /> // metto il componennte in una variabile
+const root = document.getElementById("root");
 
-class HelloWorld extends React.Component {
-    render(){
-        return <h1>Hello, World!</h1>
-    }
-}
-
-class App extends React.Component{
-    render(){
-        return <div> <HelloWorld /> </div>
-    }
-}
-
-root.render(<App />);
+ReactDOM.render(appElement, root); //primo parametro: cosa renderizzare; secondo: dove renderizzare 
