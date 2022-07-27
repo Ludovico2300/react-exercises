@@ -13,7 +13,7 @@ export class App extends React.Component {
         <div> 
             {helloWorldElement}
             {messageElement} 
-            <Welcome name="Ludovic"/>
+            <Welcome name="Ludovico"/>
 
         </div>
         )
