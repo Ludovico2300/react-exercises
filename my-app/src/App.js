@@ -7,15 +7,19 @@ import { Welcome } from "./Welcome";
 const helloWorldElement = <HelloWorld />
 const messageElement = <Message />
 
+//set default value of a props 
+Welcome.defaultProps = {
+    name: "Ludovico",
+};
+
 export class App extends React.Component {
     render() {
         return (
-        <div> 
-            {helloWorldElement}
-            {messageElement} 
-            <Welcome name="Ludovico"/>
-
-        </div>
+            <div>
+                {helloWorldElement}
+                {messageElement}
+                <Welcome />
+            </div>
         )
     }
 }
