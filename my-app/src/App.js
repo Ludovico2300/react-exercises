@@ -1,4 +1,5 @@
 import React from "react"
+import { Age } from "./Age";
 
 import { HelloWorld } from "./HelloWorld";
 import { Message } from "./Message";
@@ -12,13 +13,14 @@ Welcome.defaultProps = {
     name: "Ludovico",
 };
 
+
 export class App extends React.Component {
     render() {
         return (
             <div>
                 {helloWorldElement}
                 {messageElement}
-                <Welcome age={21}/>
+                <Welcome name={<strong>Mario</strong>}/>
             </div>
         )
     }
