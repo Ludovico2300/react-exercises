@@ -3,7 +3,7 @@ import { Age } from "./Age";
 
 import { HelloWorld } from "./HelloWorld";
 import { Message } from "./Message";
-import { Welcome } from "./Welcome";
+import  {Welcome}  from "./Welcome";
 
 const helloWorldElement = <HelloWorld />
 const messageElement = <Message />
