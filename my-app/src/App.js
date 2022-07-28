@@ -9,7 +9,7 @@ const messageElement = <Message />
 
 //set default value of a props 
 Welcome.defaultProps = {
-    name: "Ludovico",
+    name: "John",
 };
 
 
@@ -19,7 +19,7 @@ export class App extends React.Component {
             <div>
                 {helloWorldElement}
                 {messageElement}
-                <Welcome name={<strong>Mario</strong>} age={65}/>
+                <Welcome age={21}/>
             </div>
         )
     }
