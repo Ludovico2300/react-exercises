@@ -1,5 +1,4 @@
 import React from "react"
-import { Age } from "./Age";
 
 import { HelloWorld } from "./HelloWorld";
 import { Message } from "./Message";
@@ -20,7 +19,7 @@ export class App extends React.Component {
             <div>
                 {helloWorldElement}
                 {messageElement}
-                <Welcome name={<strong>Mario</strong>} age={18}/>
+                <Welcome name={<strong>Mario</strong>} age={21}/>
             </div>
         )
     }

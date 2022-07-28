@@ -2,10 +2,6 @@ import React from "react";
 
 import {Age} from "./Age";
 
-// Age.defaultProps = {
-//     age: 18,
-// };
-
 
 export class Welcome extends React.Component {
 
