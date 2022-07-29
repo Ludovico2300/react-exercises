@@ -2,7 +2,7 @@ import React from "react";
 
 export class Counter extends React.Component {
     state = {
-        count: 0
+        count: this.props.initCounter
     }; //lo state è una vera e propria proprietà (oggetto) della classe
     //in questo caso la classe Counter contiene l'oggetto state, con la proprietà count 
 
@@ -11,10 +11,10 @@ export class Counter extends React.Component {
         setInterval(() => {
             this.setState((state) => { //setState viene richiamata ogni volta che lo state si evolve
                 return {
-                    count: state.count + 1, //aggiungo 1
+                    count: state.count + this.props.increment, 
                 };
             });
-        }, 1000); // ogni secondo
+        }, this.props.interval); 
     }
     render() {
         return <h1>count: {this.state.count}</h1>;

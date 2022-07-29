@@ -7,11 +7,17 @@ import { Counter } from "./Counter";
 
 const helloWorldElement = <HelloWorld />
 const messageElement = <Message />
-const counterElement = <Counter />
+
 
 //set default value of a props 
 Welcome.defaultProps = {
     name: "John",
+};
+
+Counter.defaultProps = {
+    initCounter: 0,
+    increment: 1,
+    interval: 1000,
 };
 
 
@@ -22,7 +28,7 @@ export class App extends React.Component {
                 {helloWorldElement}
                 {messageElement}
                 <Welcome age={12}/>
-                {counterElement}
+                <Counter initCounter={0} increment={1} interval={1000}/>
             </div>
         )
     }
