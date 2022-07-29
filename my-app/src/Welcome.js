@@ -17,3 +17,7 @@ export class Welcome extends React.Component {
     }
 }
 
+//set default value of a props 
+Welcome.defaultProps = {
+    name: "John",
+};

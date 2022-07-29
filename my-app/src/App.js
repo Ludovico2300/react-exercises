@@ -9,18 +9,6 @@ const helloWorldElement = <HelloWorld />
 const messageElement = <Message />
 
 
-//set default value of a props 
-Welcome.defaultProps = {
-    name: "John",
-};
-
-Counter.defaultProps = {
-    initCounter: 0,
-    increment: 1,
-    interval: 1000,
-};
-
-
 export class App extends React.Component {
     render() {
         return (

@@ -17,7 +17,21 @@ export class Counter extends React.Component {
         }, this.props.interval); 
     }
     render() {
-        return <h1>count: {this.state.count}</h1>;
+        return <CounterDisplay count={this.state.count}/>;
     }
 
 }
+
+export class CounterDisplay extends React.Component{
+    render(){
+        return (
+            <h1>Counter: {this.props.count}</h1>
+        )
+    }
+}
+
+Counter.defaultProps = {
+    initCounter: 0,
+    increment: 1,
+    interval: 1000,
+};
