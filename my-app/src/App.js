@@ -16,7 +16,7 @@ export class App extends React.Component {
                 {helloWorldElement}
                 {messageElement}
                 <Welcome age={12}/>
-                <Counter initCounter={0} increment={1} interval={1000}/>
+                {/* <Counter initCounter={0} increment={1} interval={1000}/> */}
             </div>
         )
     }

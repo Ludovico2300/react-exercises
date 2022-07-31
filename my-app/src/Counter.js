@@ -6,24 +6,24 @@ export class Counter extends React.Component {
     }; //lo state è una vera e propria proprietà (oggetto) della classe
     //in questo caso la classe Counter contiene l'oggetto state, con la proprietà count 
 
-    constructor(props) {
-        super(props);
+    componentDidMount() {
+
         setInterval(() => {
             this.setState((state) => { //setState viene richiamata ogni volta che lo state si evolve
                 return {
-                    count: state.count + this.props.increment, 
+                    count: state.count + this.props.increment,
                 };
             });
-        }, this.props.interval); 
+        }, this.props.interval);
     }
     render() {
-        return <CounterDisplay count={this.state.count}/>;
+        return <CounterDisplay count={this.state.count} />;
     }
 
 }
 
-export class CounterDisplay extends React.Component{
-    render(){
+export class CounterDisplay extends React.Component {
+    render() {
         return (
             <h1>Counter: {this.props.count}</h1>
         )
