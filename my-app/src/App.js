@@ -6,6 +6,7 @@ import  {Welcome}  from "./Welcome";
 import { Counter } from "./Counter";
 import { ClickCounter } from "./ClickCounter";
 import { ClickTracker } from "./ClickTracker";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 
 const helloWorldElement = <HelloWorld />
 const messageElement = <Message />
@@ -15,12 +16,15 @@ export class App extends React.Component {
     render() {
         return (
             <div>
-                {helloWorldElement}
+                {/* {helloWorldElement}
                 {messageElement}
                 <Welcome age={12}/>
                 <Counter initCounter={0} increment={1} interval={1000}/>
                 <ClickCounter />
-                <ClickTracker />
+                <ClickTracker /> */}
+                <div>
+                <InteractiveWelcome/>
+                </div>
             </div>
         )
     }
